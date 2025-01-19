@@ -1,0 +1,13 @@
+FROM python:3.9
+
+RUN pip install pandas
+RUN pip install pgcli
+RUN pip install sqlalchemy
+RUN pip install psycopg2
+RUN pip install  pyarrow
+
+WORKDIR /app
+
+COPY ingest_data_parqut.py ingest_data_parqut.py
+
+ENTRYPOINT ["python","ingest_data_parqut.py"]
