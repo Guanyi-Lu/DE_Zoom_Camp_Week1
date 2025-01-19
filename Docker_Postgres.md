@@ -5,7 +5,7 @@ Using Docker networks allows for more control over container communication, maki
 
 docker network create pg-network (run this only onetime)
 
-### pg-database container
+## What pg-database do:
 This container is to run the pgAdmin application, which is a web-based tool for managing and interacting with PostgreSQL databases.
 
 docker run -d \
