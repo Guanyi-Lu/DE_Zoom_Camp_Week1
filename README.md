@@ -1,6 +1,14 @@
-# First Week Course Content
-1. Introduction to docker (docker build, docker run, docker-compose, network)
-2. Use docker images to interact with Postgres SQL (PGAdmin is the UI), this includes  data ingestion to Postgres (local machine method using python and dockerize method), query tables.
-3. Introduction to GCP (storage bucket, SDK, authentication
-4. Introduction to Terraform: Infrastructure as code, use variables to config cloud platform(GCP: https://registry.terraform.io/providers/wiardvanrij/ipv4google/latest/docs/resources/storage_bucket), execution command(init, plan, apply, destroy)
+
+# 🚀 Week 1 - DEZoomcamp: Exploring DevOps & Cloud Technologies 
+
+In the first week of DEZoomcamp, I covered:
+
+🔹 **Docker**: Built and ran containers, worked with Docker networking, and interacted with Postgres SQL for data ingestion.
+
+🔹 **GCP**: Learned about storage buckets, SDK, and authentication.
+
+🔹 **Terraform**: Explored Infrastructure as Code (IaC), configured GCP resources, and used init, plan, apply, and destroy commands.
+
+Excited for what’s ahead! 💻🌐
+
 
