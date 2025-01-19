@@ -12,7 +12,7 @@ docker run -d \
   -e POSTGRES_USER="root" \
   -e POSTGRES_PASSWORD="root" \
   -e POSTGRES_DB="ny_taxi" \
-  -v c:/Users/Guanyi/DE_Zoom_Camp/Week1/ny_taxi_postgres_data:/var/lib/postgresql/data \ (first is host machine path, second is container path)
+  -v c:/Users/Guanyi/DE_Zoom_Camp/Week1/ny_taxi_postgres_data:/var/lib/postgresql/data \
   -p 5432:5432 \
   --network pg-network \
   --name pg-database \ 
@@ -24,7 +24,7 @@ docker run -p 8080:80 \
     -e 'PGADMIN_DEFAULT_EMAIL=user@domain.com' \
     -e 'PGADMIN_DEFAULT_PASSWORD=SuperSecret' \
     --network pg-network  \
-    --name pgadmin-2 \#(this is my new docker name)
+    --name pgadmin-2 \
     -d dpage/pgadmin4 
 
 ## What pgadmin-2 does: 
