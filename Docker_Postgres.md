@@ -1,10 +1,12 @@
 # Interact with Postgres
 
-## Below using network to let 2 contatiners talk:
+## Network:
+Using Docker networks allows for more control over container communication, making it essential for larger-scale or more complex Docker environments
 
-docker network create pg-network (run this only onetime, which i have run it on 2025/01/08)
+docker network create pg-network (run this only onetime)
 
-## pg-database container 's function is to run the pgAdmin application, which is a web-based tool for managing and interacting with PostgreSQL databases.
+### pg-database container
+This container is to run the pgAdmin application, which is a web-based tool for managing and interacting with PostgreSQL databases.
 
 docker run -d \
   -e POSTGRES_USER="root" \
@@ -14,9 +16,9 @@ docker run -d \
   -p 5432:5432 \
   --network pg-network \
   --name pg-database \ 
-  #### pg-database is the name of the container and also what you put in the pgadmin interface as the host name/address to create new server
-  postgres:13 
-  #### The docker image being used is postgres 13 to ensure i have the postgres sql server running in side this container
+  
+pg-database is the name of the container and also what you put in the pgadmin interface as the host name/address to create new server
+postgres:13  The docker image being used is postgres 13 to ensure i have the postgres sql server running in side this container
 
 docker run -p 8080:80 \
     -e 'PGADMIN_DEFAULT_EMAIL=user@domain.com' \
