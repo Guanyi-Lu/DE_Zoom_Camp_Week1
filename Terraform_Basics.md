@@ -1,4 +1,4 @@
-##Terraform Basics
+## Terraform Basics
 
 Terraform is used to manage infrastructure as code in a repeatable, automated, and controlled manner. In the context of Google Cloud Platform (GCP), Terraform helps manage various resources, like virtual machines, storage buckets, networks, and databases, without manually clicking through the GCP console.
 
