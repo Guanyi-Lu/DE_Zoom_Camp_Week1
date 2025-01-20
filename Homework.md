@@ -57,7 +57,9 @@ volumes:
     name: vol-pgadmin_data
 ```
 
-it should be db:5432. use localhost:8080 to open the pgadmin interface, then create a new server, name should be db,posts should be 5432
+it should be db:5432. use localhost:8080 to open the pgadmin interface, then create a new server, name should be db,posts should be 5432.
+pgAdmin (inside Docker) connects to db:5432 (service name & container port).
+Your local machine connects using localhost:5433 (host port).
 
 ## Question 3:
 
